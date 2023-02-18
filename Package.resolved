@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "HsExtensions.Swift",
-        "repositoryURL": "https://github.com/horizontalsystems/HsExtensions.Swift.git",
+        "repositoryURL": "https://github.com/BoRoZzz/HsExtensions.git",
         "state": {
-          "branch": null,
-          "revision": "360db9624dcf720452ccf11c421cd0fb4f5be6b2",
-          "version": "1.0.3"
+          "branch": "main",
+          "revision": "0be25541eaf67051a34d8e08c7108cf44478fb78",
+          "version": null
         }
       }
     ]

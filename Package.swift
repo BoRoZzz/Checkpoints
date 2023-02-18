@@ -6,6 +6,7 @@ let package = Package(
     name: "Checkpoints",
     platforms: [
         .iOS(.v13),
+        .macOS(.v12),
     ],
     products: [
         .library(
@@ -13,13 +14,13 @@ let package = Package(
             targets: ["Checkpoints"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/horizontalsystems/HsExtensions.Swift.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/BoRoZzz/HsExtensions.git", .branch("main")),
     ],
     targets: [
         .target(
             name: "Checkpoints",
             dependencies: [
-                .product(name: "HsExtensions", package: "HsExtensions.Swift"),
+                .product(name: "HsExtensions", package: "HsExtensions"),
             ],
             resources: [
                 .copy("Assets")
@@ -28,7 +29,7 @@ let package = Package(
             name: "CheckpointTests",
             dependencies: [
                 "Checkpoints",
-                .product(name: "HsExtensions", package: "HsExtensions.Swift"),
+                .product(name: "HsExtensions", package: "HsExtensions"),
             ]),
     ]
 )
