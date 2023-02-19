@@ -13,7 +13,7 @@ let package = Package(
             targets: ["Checkpoints"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/BoRoZzz/HsExtensions.git", .branch("main")),
+        .package(url: "https://github.com/BoRoZzz/HsExtensions.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         .target(
